@@ -11,7 +11,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "types": ["svelte", "@testing-library/jest-dom"]
+    "types": ["svelte", "@testing-library/jest-dom"],
+    "paths": {
+      "$lib/*": ["./src/lib/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.svelte", "src/**/*.svelte.ts"]
 }
