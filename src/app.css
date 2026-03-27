@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --background: 0 0% 100%;
+    --surface: 0 0% 96%;
+
+    /* Foregrounds */
+    --foreground: 222 47% 11%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Brand */
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Accents */
+    --accent: 210 40% 94%;
+    --accent-foreground: 222 47% 11%;
+
+    /* Feedback */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* UI chrome */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Backgrounds */
+    --background: 222 47% 11%;
+    --surface: 217 33% 17%;
+
+    /* Foregrounds */
+    --foreground: 210 40% 98%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Brand */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+
+    /* Accents */
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Feedback */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* UI chrome */
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
+    --ring: 224 76% 48%;
+  }
+
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+  }
+}
+
+@layer utilities {
+  .tap-pulse {
+    transition: transform 150ms ease-out;
+  }
+  .tap-pulse:active {
+    transform: scale(1.1);
+  }
+}
