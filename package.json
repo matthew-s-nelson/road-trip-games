@@ -12,13 +12,13 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@eslint/js": "^10.0.1",
     "globals": "^17.4.0",
     "lucide-svelte": "^0.468.0",
     "svelte": "^5.0.0",
     "svelte-spa-router": "^4.0.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.0.0",
     "@sveltejs/vite-plugin-svelte": "^5.0.0",
     "@tailwindcss/vite": "^4.0.0",
     "@testing-library/jest-dom": "^6.6.0",

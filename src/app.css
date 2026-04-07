@@ -1,64 +1,82 @@
 @import 'tailwindcss';
 
+@theme {
+  /* Wire Tailwind v4 utility classes to the CSS custom properties below */
+  --color-background:           hsl(var(--background));
+  --color-surface:              hsl(var(--surface));
+  --color-foreground:           hsl(var(--foreground));
+  --color-muted-foreground:     hsl(var(--muted-foreground));
+  --color-primary:              hsl(var(--primary));
+  --color-primary-foreground:   hsl(var(--primary-foreground));
+  --color-accent:               hsl(var(--accent));
+  --color-accent-foreground:    hsl(var(--accent-foreground));
+  --color-success:              hsl(var(--success));
+  --color-success-foreground:   hsl(var(--success-foreground));
+  --color-destructive:          hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border:               hsl(var(--border));
+  --color-input:                hsl(var(--input));
+  --color-ring:                 hsl(var(--ring));
+  --radius: 0.5rem;
+}
+
 @layer base {
   :root {
-    /* Backgrounds */
-    --background: 0 0% 100%;
-    --surface: 0 0% 96%;
+    /* Backgrounds — sun-baked road map paper */
+    --background: 40 55% 94%;
+    --surface: 38 45% 87%;
 
-    /* Foregrounds */
-    --foreground: 222 47% 11%;
-    --muted-foreground: 215 16% 47%;
+    /* Foregrounds — deep asphalt */
+    --foreground: 220 20% 15%;
+    --muted-foreground: 220 10% 45%;
 
-    /* Brand */
-    --primary: 221 83% 53%;
-    --primary-foreground: 0 0% 100%;
+    /* Brand — highway sign amber */
+    --primary: 38 95% 48%;
+    --primary-foreground: 220 20% 10%;
 
-    /* Accents */
-    --accent: 210 40% 94%;
-    --accent-foreground: 222 47% 11%;
+    /* Accents — desert sand */
+    --accent: 35 40% 88%;
+    --accent-foreground: 220 20% 15%;
 
     /* Feedback */
-    --success: 142 71% 45%;
+    --success: 142 55% 38%;
     --success-foreground: 0 0% 100%;
-    --destructive: 0 84% 60%;
+    --destructive: 0 80% 55%;
     --destructive-foreground: 0 0% 100%;
 
     /* UI chrome */
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 221 83% 53%;
-
-    --radius: 0.5rem;
+    --border: 38 30% 72%;
+    --input: 38 30% 72%;
+    --ring: 38 95% 48%;
   }
 
   .dark {
-    /* Backgrounds */
-    --background: 222 47% 11%;
-    --surface: 217 33% 17%;
+    /* Backgrounds — night highway sky */
+    --background: 220 25% 10%;
+    --surface: 220 20% 16%;
 
-    /* Foregrounds */
-    --foreground: 210 40% 98%;
-    --muted-foreground: 215 20% 65%;
+    /* Foregrounds — headlight cream */
+    --foreground: 40 30% 95%;
+    --muted-foreground: 220 15% 55%;
 
-    /* Brand */
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 11%;
+    /* Brand — glowing amber signage */
+    --primary: 38 95% 55%;
+    --primary-foreground: 220 25% 10%;
 
-    /* Accents */
-    --accent: 217 33% 17%;
-    --accent-foreground: 210 40% 98%;
+    /* Accents — dark road surface */
+    --accent: 220 20% 20%;
+    --accent-foreground: 40 30% 95%;
 
     /* Feedback */
-    --success: 142 71% 45%;
+    --success: 142 55% 45%;
     --success-foreground: 0 0% 100%;
-    --destructive: 0 63% 31%;
+    --destructive: 0 63% 35%;
     --destructive-foreground: 0 0% 100%;
 
     /* UI chrome */
-    --border: 217 33% 25%;
-    --input: 217 33% 25%;
-    --ring: 224 76% 48%;
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 38 95% 55%;
   }
 
   body {
