@@ -1,6 +1,7 @@
 import type { GameDefinition } from './types';
-import { Car } from 'lucide-svelte';
+import { Car, CaseSensitive } from 'lucide-svelte';
 import LicensePlateGame from './license-plate/LicensePlateGame.svelte';
+import AlphabetGame from './alphabet/AlphabetGame.svelte';
 
 export const games: GameDefinition[] = [
   {
@@ -10,5 +11,13 @@ export const games: GameDefinition[] = [
     icon: Car,
     route: '/license-plate',
     component: LicensePlateGame,
+  },
+  {
+    id: 'alphabet',
+    title: 'Alphabet Game',
+    description: 'Find every letter A–Z outside the car.',
+    icon: CaseSensitive,
+    route: '/alphabet',
+    component: AlphabetGame,
   },
 ];
