@@ -1,7 +1,8 @@
 import type { GameDefinition } from './types';
-import { Car, CaseSensitive } from 'lucide-svelte';
+import { Car, CaseSensitive, LayoutGrid } from 'lucide-svelte';
 import LicensePlateGame from './license-plate/LicensePlateGame.svelte';
 import AlphabetGame from './alphabet/AlphabetGame.svelte';
+import BingoGame from './bingo/BingoGame.svelte';
 
 export const games: GameDefinition[] = [
   {
@@ -19,5 +20,13 @@ export const games: GameDefinition[] = [
     icon: CaseSensitive,
     route: '/alphabet',
     component: AlphabetGame,
+  },
+  {
+    id: 'bingo',
+    title: 'Road Trip Bingo',
+    description: 'Spot things on your bingo card to win.',
+    icon: LayoutGrid,
+    route: '/bingo',
+    component: BingoGame,
   },
 ];
