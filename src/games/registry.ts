@@ -1,7 +1,8 @@
 import type { GameDefinition } from './types';
-import { Car, CaseSensitive, LayoutGrid } from 'lucide-svelte';
+import { Car, CaseSensitive, Eye, LayoutGrid } from 'lucide-svelte';
 import LicensePlateGame from './license-plate/LicensePlateGame.svelte';
 import AlphabetGame from './alphabet/AlphabetGame.svelte';
+import ISpyGame from './i-spy/ISpyGame.svelte';
 import BingoGame from './bingo/BingoGame.svelte';
 
 export const games: GameDefinition[] = [
@@ -20,6 +21,14 @@ export const games: GameDefinition[] = [
     icon: CaseSensitive,
     route: '/alphabet',
     component: AlphabetGame,
+  },
+  {
+    id: 'i-spy',
+    title: 'I Spy',
+    description: 'Give a clue; others guess what you see.',
+    icon: Eye,
+    route: '/i-spy',
+    component: ISpyGame,
   },
   {
     id: 'bingo',
