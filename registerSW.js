@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/road-trip-games/sw.js', { scope: '/road-trip-games/' })})}
